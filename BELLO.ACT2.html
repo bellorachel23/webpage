@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wonderful Water Falls in KABANKALAN City</title>
+
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to bottom, #87ceeb 0%, #f5f0e6 100%); /* Skyblue + beige */
+            color: #4b3832; /* Choco brown text */
+        }
+
+        /* Container */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            background: linear-gradient(90deg, #1e90ff, #4b3832); /* Blue to Choco brown */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #4b3832;
+            font-style: italic;
+        }
+
+        /* Waterfalls Grid */
+        .falls-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .fall-card {
+            background-color: #fff8f0; /* beige-like card */
+            border-radius: 15px;
+            overflow: hidden;
+            display: grid;
+            grid-template-rows: auto 1fr;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .fall-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-bottom: 2px solid #4b3832;
+        }
+
+        .fall-card .description {
+            padding: 15px;
+            font-size: 1rem;
+            color: #4b3832;
+        }
+
+        /* Footer */
+        footer {
+            grid-column: 1 / -1;
+            background-color: #f5e1d0; /* light choco/beige */
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px dashed #4b3832;
+            font-size: 0.95rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .falls-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <header>
+        <h1>Wonderful Water Falls in KABANKALAN City</h1>
+        <p>Experience the beauty and serenity of nature</p>
+    </header>
+
+    <!-- Falls Grid -->
+    <div class="falls-grid">
+
+        <!-- Fall 1 -->
+        <div class="fall-card">
+            <img src="mag-aso.jpg" alt="Waterfall 1">
+            <div class="description">
+                <strong>Mag-Aso Falls</strong><br>
+                A hidden gem surrounded by lush greenery. Perfect spot for nature lovers and hikers.
+            </div>
+        </div>
+
+        <!-- Fall 2 -->
+        <div class="fall-card">
+            <img src="agustina.jpg" alt="Waterfall 2">
+            <div class="description">
+                <strong>Agustina Falls</strong><br>
+                Known for its gentle cascading waters and serene atmosphere. Ideal for relaxing picnics.
+            </div>
+        </div>
+
+        <!-- Fall 3 -->
+        <div class="fall-card">
+            <img src="dalicanon.jpg" alt="Waterfall 3">
+            <div class="description">
+                <strong>Dalicanon Falls</strong><br>
+                Surrounded by tropical trees, it’s a favorite for photographers. Refreshing natural pool at the base.
+            </div>
+        </div>
+
+        <!-- Fall 4 -->
+        <div class="fall-card">
+            <img src="redstone.jpg" alt="Waterfall 4">
+            <div class="description">
+                <strong>Pulang bato Falls</strong><br>
+                A scenic waterfall with crystal-clear water. Perfect for adventure seekers and campers.
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        For more wonderful places in KABANKALAN City, contact us. <br>
+        This website is made by Rachel G. Bello
+    </footer>
+
+</div>
+
+</body>
+</html>
